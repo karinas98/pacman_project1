@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" charset="utf-8" defer></script>
+    <title>Pac-Man</title>
+  </head>
+  <body class="board">
+    <h1 class="title">PAC-MAN</h1>
+    <div class="game">
+      <div class="buttons">
+        <button id="reset" type="button">RESET</button>
+        <h3 class="rules">Rules</h3>
+        <ul class="rules-desc">
+          <li>Your goal is the make as much points without getting eaten</li>
+          <li>When the ghost catches Pac-Man the game is over.</li>
+          <li>
+            When collecting Power Pellets the Ghost will turn blue and you will
+            have 10 sec to eat the ghosts for extra points
+          </li>
+          <li>Collect all the food to win</li>
+          <li>Food = 1 point</li>
+          <li>Power Pellets = 50 points</li>
+          <li>Scared Ghosts = 200 points</li>
+        </ul>
+      </div>
+      <div class="grid"></div>
+    </div>
+    <h3 class="points">Score:<span id="score">0</span></h3>
+    <div class="game-over"></div>
+    <div class="win"></div>
+    <audio id="audio" src="8d82b5_Pacman_Opening_Song_Sound_Effect.mp3"></audio>
+  </body>
+</html>
