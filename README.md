@@ -1,3 +1,4 @@
+![GA Logo](https://raw.githubusercontent.com/karinas98/MusicLibraryProject/main/469f976e-1432-11e5-8199-6ac91363302b.png) 
 
 ## Pac Man Project
 
