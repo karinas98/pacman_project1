@@ -3,11 +3,11 @@
 # Pac Man Project
 Pac Man is a classic arcade game from the 80s. The player aims to eat all the food in a maze whilst being hunted by ghosts. If the player eats special flashing food the ghosts start to flash and can now be captured by the player, sending them back to their holding pen, from where they can once again start to hunt the player. The aim is to achieve the highest score possible before being killed by the ghosts.
 
-##Brief Requirements 
+## Brief Requirements 
 The player should be able to clear at least one board
 The player's score should be displayed at the end of the game
 
-Deployment Link 
+## Deployment Link 
 pacman-project1.netlify.app
 
 ## Project Overview
