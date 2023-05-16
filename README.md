@@ -23,7 +23,7 @@ Before starting my Pac Man game, I wanted to plan how I was going to figure out 
 
 The first two days were dedicated to researching, developing, and designing the Pac-Man Grid. It was important for me to start strong with a good-looking starting point to then add in my elements and logic. I decided to create my grid by creating an array and giving each square a number from 0 to 4. By doing so, I am able to implement border limitations, power pellets and the ghost lair much easier. To display, I can then loop through the grid and add styling to differentiate empty squares and wall limitations. 
 
-![](Screenshot 2023-05-15 at 18.39.58.png)
+![](https://github.com/karinas98/pacman_project1/blob/228e5405da4a89a4364634bc6a7858f2a9e187d0/Screenshot%202023-05-15%20at%2018.39.58.png)
 
 
 
