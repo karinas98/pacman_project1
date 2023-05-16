@@ -25,6 +25,11 @@ The first two days were dedicated to researching, developing, and designing the 
 
 ![](https://github.com/karinas98/pacman_project1/blob/228e5405da4a89a4364634bc6a7858f2a9e187d0/Screenshot%202023-05-15%20at%2018.39.58.png)
 
+![](https://github.com/karinas98/pacman_project1/blob/ea27fb3e1a8921a263a2665022b7fd60f4dd5715/Screenshot%202023-05-15%20at%2018.40.13.png)
+
+Once my grid was complete and I researched how to approach the project and logic, I started creating my Pac-Man and the standard functionalities. I created a function using if/else statements where I can specify the movement of Pac-Man when a keyboard arrow is pressed and added restrictions for the Pac-Man to differentiate wall and empty squares. 
+
+![](https://github.com/karinas98/pacman_project1/blob/ea27fb3e1a8921a263a2665022b7fd60f4dd5715/Screenshot%202023-05-15%20at%2018.40.13.png)
 
 
 ## Project Screenshots
