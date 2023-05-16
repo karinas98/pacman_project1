@@ -17,7 +17,7 @@ My first game concept that I have developed so far. It was built using HTML, CSS
 ## Tech Used
 HTML | CSS | Javascript
 
-##Timeline
+## Timeline
 1 Week - Solo
 
 ## Planning and Sketching
@@ -214,13 +214,13 @@ function moveGhost(ghost) {
   }, 1000);
 }
 ```
-##Key Learnings
+## Key Learnings
 This project is where I learn the concept of JavaScript. It was my first experience testing out the code and putting into practice what I had learned. It made me aware of what coding is about and what it is capable of. It made me think of all the opportunities that one may have to improve their skills in programming. Project management and Time Management were also key to presenting a final game within the timeline that was had. 
 
-##Bugs
+## Bugs
 One of the bugs that needs fixing is that since the ghosts do not have specific patterns of movement, sometimes they get stuck in the ghost lair and it can take some time before they get into the board.
 
-##Future Improvements
+## Future Improvements
 I would like to add in more styling for the ghost to make them seem more realistic. 
 I would also add a feature for the PacMan to pass from one side to the other through the limits of the board. Also, I would program each Ghost to follow a path to chase the PacMan instead of doing a random route.
  
