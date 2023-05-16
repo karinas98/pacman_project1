@@ -1,6 +1,6 @@
 ![GA Logo](https://raw.githubusercontent.com/karinas98/MusicLibraryProject/main/469f976e-1432-11e5-8199-6ac91363302b.png) 
 
-### Pac Man Project
+# Pac Man Project
 
 https://karinas98.github.io/
 ## Project Overview
@@ -23,7 +23,9 @@ Before starting my Pac Man game, I wanted to plan how I was going to figure out 
 
 The first two days were dedicated to researching, developing, and designing the Pac-Man Grid. It was important for me to start strong with a good-looking starting point to then add in my elements and logic. I decided to create my grid by creating an array and giving each square a number from 0 to 4. By doing so, I am able to implement border limitations, power pellets and the ghost lair much easier. To display, I can then loop through the grid and add styling to differentiate empty squares and wall limitations. 
 
-![](https://github.com/karinas98/karinas98.github.io/blob/main/Screenshot%202023-01-23%20at%2017.15.56.png)
+![](Screenshot 2023-05-15 at 18.39.58.png)
+
+
 
 ## Project Screenshots
 
