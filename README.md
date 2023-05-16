@@ -29,8 +29,13 @@ The first two days were dedicated to researching, developing, and designing the 
 
 Once my grid was complete and I researched how to approach the project and logic, I started creating my Pac-Man and the standard functionalities. I created a function using if/else statements where I can specify the movement of Pac-Man when a keyboard arrow is pressed and added restrictions for the Pac-Man to differentiate wall and empty squares. 
 
-![](https://github.com/karinas98/pacman_project1/blob/ea27fb3e1a8921a263a2665022b7fd60f4dd5715/Screenshot%202023-05-15%20at%2018.40.13.png)
+![](https://github.com/karinas98/pacman_project1/blob/7b5702f20467c03086c7853f240992490c24ba6e/Screenshot%202023-05-16%20at%2014.18.23.png)
 
+Once that was done and the user had a working keyboard movement, I started working on the ghosts. I decided to attempt working based on a constructor template to then create all 4 ghosts with the forEach loop and integrate color to identify each one. 
+
+Once all the main elements were there, that is when I started working on other functionalities such as the Power Pellets, Scared Ghosts, Eating, increasing Points and winning/losing logic. Because I had used numbers identifying each square of the grid, I could easily identify the position of the Pac-Man and the Ghosts using the “.contains” functionality and implement them with if statements whenever they’ve touched one another or reached a power pellet. 
+
+![](https://github.com/karinas98/pacman_project1/blob/7b5702f20467c03086c7853f240992490c24ba6e/Screenshot%202023-05-16%20at%2014.18.23.png)
 
 ## Project Screenshots
 
