@@ -1,20 +1,28 @@
 ![GA Logo](https://raw.githubusercontent.com/karinas98/MusicLibraryProject/main/469f976e-1432-11e5-8199-6ac91363302b.png) 
 
 # Pac Man Project
+Pac Man is a classic arcade game from the 80s. The player aims to eat all the food in a maze whilst being hunted by ghosts. If the player eats special flashing food the ghosts start to flash and can now be captured by the player, sending them back to their holding pen, from where they can once again start to hunt the player. The aim is to achieve the highest score possible before being killed by the ghosts.
 
-https://karinas98.github.io/
+##Brief Requirements 
+The player should be able to clear at least one board
+The player's score should be displayed at the end of the game
+
+Deployment Link 
+pacman-project1.netlify.app
+
 ## Project Overview
+My first game concept that I have developed so far. It was built using HTML, CSS and JavaScript. I have decided to do Pac-Man because it would highlight my skills well and allow me to improve as I learn more. Users can control the game using their keyboard arrows and reset the game if they wish to start over. 
 
-My first game concept that I have developed so far. It was built using HTML, CSS and Javascript. I have decided to do Pac Man because it would highlight well my skills and give me the opportunity to improve as I learn more. Users can control the game using their keyboard arrows and reset the game if they wish to start over.  
 
 ## Tech Used
 HTML | CSS | Javascript
 
+##Timeline
+1 Week - Solo
 
 ## Planning and Sketching
 
-Before starting my Pac Man game, I wanted to plan how I was going to figure out each element. I wanted to visualize how the grid would look like, create a brainstorming section for ideas, add in what design elements I wanted to incorporate and then plan out a step by step list of what I needed to accomplish.
-
+Before starting my Pac-Man game, I wanted to plan how I was going to figure out each element. I wanted to visualize how the grid would look, create a brainstorming section for ideas, add in what design elements I wanted to incorporate, and then plan out a step-by-step list of what I needed to accomplish.
 
 ![](https://github.com/karinas98/karinas98.github.io/blob/main/Screenshot%202023-01-23%20at%2017.15.56.png)
 
