@@ -1,15 +1,14 @@
 ![GA Logo](https://raw.githubusercontent.com/karinas98/MusicLibraryProject/main/469f976e-1432-11e5-8199-6ac91363302b.png) 
 
-## Pac Man Project
+### Pac Man Project
 
 https://karinas98.github.io/
 ## Project Overview
 
 My first game concept that I have developed so far. It was built using HTML, CSS and Javascript. I have decided to do Pac Man because it would highlight well my skills and give me the opportunity to improve as I learn more. Users can control the game using their keyboard arrows and reset the game if they wish to start over.  
+
 ## Tech Used
-
 HTML | CSS | Javascript
-
 
 
 ## Planning and Sketching
@@ -22,18 +21,9 @@ Before starting my Pac Man game, I wanted to plan how I was going to figure out 
 
 ## Roadmap
 
-Day 1 - 4
+The first two days were dedicated to researching, developing, and designing the Pac-Man Grid. It was important for me to start strong with a good-looking starting point to then add in my elements and logic. I decided to create my grid by creating an array and giving each square a number from 0 to 4. By doing so, I am able to implement border limitations, power pellets and the ghost lair much easier. To display, I can then loop through the grid and add styling to differentiate empty squares and wall limitations. 
 
-The first two days was dedicated on researching, developing and designing the Pac Man Grid. It was important for me to start strong with a good looking starting point to then add in my elements and logic. 
-
-Day 4 - 12
-
-Once my grid is complete and i've researched how to approach project and logic. I start creating my Pac Man and the standard functionalities. Once that is done and the user has working keyboard movement, I start working on the ghosts. I decide to attempt working based on a template to then create all 4 ghosts and integrate color to identify each one. With each element added I gave them some styling to give myself so easier wins and so that I can feel good about my project. Once all main elements were there, that is when I started working of other functionalities such as the Power Pellets, Scared Ghosts, Eating, increasing Points and winning / losing logic.
-
-Day 12 - 16 
-
-The Last four days were about adding elements to make the game a little better. I've added a reset button, an audio for the intro of the game and animation for the pacman
-
+![](https://github.com/karinas98/karinas98.github.io/blob/main/Screenshot%202023-01-23%20at%2017.15.56.png)
 
 ## Project Screenshots
 
