@@ -22,14 +22,99 @@ Before starting my Pac Man game, I wanted to plan how I was going to figure out 
 ## Roadmap
 
 The first two days were dedicated to researching, developing, and designing the Pac-Man Grid. It was important for me to start strong with a good-looking starting point to then add in my elements and logic. I decided to create my grid by creating an array and giving each square a number from 0 to 4. By doing so, I am able to implement border limitations, power pellets and the ghost lair much easier. To display, I can then loop through the grid and add styling to differentiate empty squares and wall limitations. 
+```javascript
+//Array of Number for Meaning of each squares
+//0 - PacDots
+//1 - Wall
+//2 - Ghost Lair
+//3 - Empty
+//4 Power Pellets
 
-![](https://github.com/karinas98/pacman_project1/blob/228e5405da4a89a4364634bc6a7858f2a9e187d0/Screenshot%202023-05-15%20at%2018.39.58.png)
+const layout = [
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1,
+  1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 4, 0, 0,
+  0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1,
+  0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0,
+  0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 4, 0, 1, 3, 3, 1, 1,
+  1, 1, 1, 3, 3, 1, 4, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 3, 3, 3, 3, 3, 3,
+  3, 3, 3, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 3, 1, 1, 2, 2, 2, 1, 1,
+  3, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 2, 2, 2, 2, 2, 1, 0, 1,
+  0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1,
+  1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0,
+  0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1,
+  1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0,
+  1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
+  1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0,
+  0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+];
+```
+```javascript
+function createGrid() {
+  for (let i = 0; i < layout.length; i++) {
+    const square = document.createElement("div");
+    document.querySelector(".grid").appendChild(square);
+    squares.push(square);
 
-![](https://github.com/karinas98/pacman_project1/blob/ea27fb3e1a8921a263a2665022b7fd60f4dd5715/Screenshot%202023-05-15%20at%2018.40.13.png)
+    if (layout[i] === 0) {
+      squares[i].classList.add("pac-dot");
+    } else if (layout[i] === 1) {
+      squares[i].classList.add("wall");
+    } else if (layout[i] === 2) {
+      squares[i].classList.add("ghost-lair");
+    } else if (layout[i] === 4) {
+      squares[i].classList.add("power-pellet");
+    }
+  }
+}
+createGrid();
+```
+
 
 Once my grid was complete and I researched how to approach the project and logic, I started creating my Pac-Man and the standard functionalities. I created a function using if/else statements where I can specify the movement of Pac-Man when a keyboard arrow is pressed and added restrictions for the Pac-Man to differentiate wall and empty squares. 
 
-![](https://github.com/karinas98/pacman_project1/blob/7b5702f20467c03086c7853f240992490c24ba6e/Screenshot%202023-05-16%20at%2014.18.23.png)
+```javascript
+function movePacman(event) {
+  squares[pacmanCurrentIndex].classList.remove("pacman");
+  squares[pacmanCurrentIndex].innerHTML = "";
+  const x = pacmanCurrentIndex % width;
+
+  if (event.code === "ArrowLeft") {
+    if (
+      x !== 0 &&
+      !squares[pacmanCurrentIndex - 1].classList.contains("wall") &&
+      !squares[pacmanCurrentIndex - 1].classList.contains("ghost-lair")
+    ) {
+      pacmanCurrentIndex -= 1;
+    }
+  } else if (event.code === "ArrowRight") {
+    if (
+      x < width - 1 &&
+      !squares[pacmanCurrentIndex + 1].classList.contains("wall") &&
+      !squares[pacmanCurrentIndex + 1].classList.contains("ghost-lair")
+    ) {
+      pacmanCurrentIndex += 1;
+    }
+  } else if (event.code === "ArrowUp") {
+    if (
+      pacmanCurrentIndex - height >= 0 &&
+      !squares[pacmanCurrentIndex - height].classList.contains("wall") &&
+      !squares[pacmanCurrentIndex - height].classList.contains("ghost-lair")
+    ) {
+      pacmanCurrentIndex -= height;
+    }
+  } else if (event.code === "ArrowDown") {
+    if (
+      pacmanCurrentIndex + height < squareNum &&
+      !squares[pacmanCurrentIndex + height].classList.contains("wall") &&
+      !squares[pacmanCurrentIndex + height].classList.contains("ghost-lair")
+    ) {
+      pacmanCurrentIndex += height;
+    }
+  }
+
+```
 
 Once that was done and the user had a working keyboard movement, I started working on the ghosts. I decided to attempt working based on a constructor template to then create all 4 ghosts with the forEach loop and integrate color to identify each one. 
 
@@ -57,6 +142,8 @@ function eatPowerPellet() {
   }
 }
 ```
+The last four days were about adding elements to make the game a little better. I've added a reset button, audio for the intro of the game, and animation for the Pacman.
+
 
 ## Project Screenshots
 
@@ -64,9 +151,8 @@ function eatPowerPellet() {
 
 
 
-
-
 ## Featured Code - Ghost Creating & Movement
+The Ghosts Template and Construction was something that I am proud of and where I have the chance to learn something new. By using this constructor, I am drying up my code a lot more than if I had created each ghost individually. And so, by creating the ghosts in this way I can use the forEach loop to create each one using the same class and array. 
 
 ```javascript
 //create Ghost
@@ -87,9 +173,11 @@ ghosts = [
   new Ghost("clyde", 228, 500),
 ];
 
+```
 
-//Ghost Movement
-//Ghosts Movement
+The ghost movement was challenging but it got me out of my comfort zone and gave me a better understanding of JavaScript. I decided to use the Math.random function to have them move around randomly around the grid while using if statements to establish the limitations. My next challenge would be to create specific functionalities to have each of them chase Pac-Man.
+
+```javascript
 function moveGhost(ghost) {
   const directions = [-1, +1, height, -height];
   let direction = directions[Math.floor(Math.random() * directions.length)];
@@ -118,11 +206,20 @@ function moveGhost(ghost) {
   }, 1000);
 }
 ```
+##Key Learnings
+This project is where I learn the concept of JavaScript. It was my first experience testing out the code and putting into practice what I had learned. It made me aware of what coding is about and what it is capable of. It made me think of all the opportunities that one may have to improve their skills in programming. Project management and Time Management were also key to presenting a final game within the timeline that was had. 
 
+##Bugs
+One of the bugs that needs fixing is that since the ghosts do not have specific patterns of movement, sometimes they get stuck in the ghost lair and it can take some time before they get into the board.
+
+##Future Improvements
+I would like to add in more styling for the ghost to make them seem more realistic. 
+I would also add a feature for the PacMan to pass from one side to the other through the limits of the board. Also, I would program each Ghost to follow a path to chase the PacMan instead of doing a random route.
+ 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karina-savoie-21b40621a/)
+[![portfolio](http://karinasavoie.com/)]()
+[![linkedin](https://www.linkedin.com/in/karina-savoie/)
 
 
 
