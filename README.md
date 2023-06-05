@@ -8,7 +8,7 @@ The player should be able to clear at least one board.
 The player's score should be displayed at the end of the game
 
 ## Deployment Link 
-https://pacman-project1.netlify.app
+[PacMan](https://pacman-project1.netlify.app)
 
 ## Project Overview
 My first game concept that I have developed so far. It was built using HTML, CSS and JavaScript. I have decided to do Pac-Man because it would highlight my skills well and allow me to improve as I learn more. Users can control the game using their keyboard arrows and reset the game if they wish to start over. 
